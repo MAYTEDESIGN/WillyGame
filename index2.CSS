@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url('animación/fondo_000.jpg') no-repeat center center/cover;
+}
+
+.character {
+    position: absolute;
+    bottom: 0;
+    left: 10vw;
+    width: 10vw;
+    height: 20vh;
+    background-size: cover;
+    transition: width 0.5s ease;
+}
+
+#Willy {
+    background-image: url('animación/idle__000.png');
+}
+
+#Willa {
+    background-image: url('animación/png/idle__000.png');
+}
+
+#obstacle-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#obst {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 4vw;
+    height: 20vh;
+    background-image: url('animación/LABIAL.png');
+    background-size: cover;
+    animation: moveObstacle 2s linear infinite;
+}
+
+@keyframes moveObstacle {
+    0% { left: 100%; }
+    100% { left: -10vw; }
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
