@@ -102,7 +102,7 @@ const saltar = () => {
     vWilla.classList.add("jumping");
     setTimeout(() => {
         vWilly.classList.remove("jumping");
-        vWilly.classList.remove("jumping");
+        vWilla.classList.remove("jumping");
     },900);
 };
 
