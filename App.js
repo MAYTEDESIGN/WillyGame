@@ -33,10 +33,16 @@ const animar = () => {
     } 
     if (estadoWilly.keyDerecha) {
         vWilly.src = "animacion/correr00" + estadoWilly.fototeca + ".png";
-        mover(1);
-    } 
 
-        if (estadoWilly.keyIzquierda) {
+        vWilly.src = "/animación/idle__00" + estadoWilly.fototeca + ".png";
+    } 
+    if (estadoWilly.keyDerecha) {
+        vWilly.src = "/animación/Run__00" + estadoWilly.fototeca + ".png";
+
+        
+        mover(1);
+    }
+    if (estadoWilly.keyIzquierda) {
 
         vWilly.src = "animacion/correr00" + estadoWilly.fototeca + ".png";
         mover(-1);
@@ -46,9 +52,7 @@ const animar = () => {
         vWilly.src = "animacion/saltar00" + estadoWilly.fototeca + ".png";
         saltar();
     }
-    // detectarColisión();
-
-
+   
     estadoWilly.fototeca++;
     if (estadoWilly.fototeca === 10) {
     estadoWilly.fototeca=0;
@@ -90,7 +94,6 @@ if (estadoWilly.keyArriba) {
     }
 }
 };
-    
 
 const mover = (orienta) => {
     estadoWilly.posicionx += orienta * estadoWilly.velocidadx;
