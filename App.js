@@ -33,29 +33,17 @@ const animar = () => {
     } 
     if (estadoWilly.keyDerecha) {
         vWilly.src = "animacion/correr00" + estadoWilly.fototeca + ".png";
-
-        vWilly.src = "/animación/idle__00" + estadoWilly.fototeca + ".png";
-    } 
-    if (estadoWilly.keyDerecha) {
-        vWilly.src = "/animación/Run__00" + estadoWilly.fototeca + ".png";
-
-        
         mover(1);
-    }
-    if (estadoWilly.keyIzquierda) {
+    } 
+
+        if (estadoWilly.keyIzquierda) {
 
         vWilly.src = "animacion/correr00" + estadoWilly.fototeca + ".png";
         mover(-1);
     }
+
     if (estadoWilly.keyArriba) {
         vWilly.src = "animacion/saltar00" + estadoWilly.fototeca + ".png";
-
-        vWilly.src = "/animación/Run__00" + estadoWilly.fototeca + ".png";
-        mover(-1);
-    }
-    if (estadoWilly.keyArriba) {
-        vWilly.src = "/animación/Jump__00" + estadoWilly.fototeca + ".png";
-
         saltar();
     }
     // detectarColisión();
@@ -76,19 +64,19 @@ const animarM = () => {
         vWilly.src = "animacion/muere00" + estadoWilly.fototeca + ".png";
 
             if (estadoWilly.keyNoPress) {
-    vWilla.src = "animacion/png/mtemblar00" +estadoWilly.fototeca+".png";
+    vWilla.src = "animacion/mtemblar00" +estadoWilly.fototeca+".png";
         }
 
         if (estadoWilly.keyDerecha) {
-        vWilla.src = "animacion/png/mcorrer00" + estadoWilly.mujer + ".png";
+        vWilla.src = "animacion/mcorrer00" + estadoWilly.mujer + ".png";
         mover(1); }
 
     if (estadoWilly.keyIzquierda) {
-    vWilla.src = "animacion/png/mcorrer00" + estadoWilly.mujer + ".png";
+    vWilla.src = "animacion/mcorrer00" + estadoWilly.mujer + ".png";
         mover(-1);    }
 
 if (estadoWilly.keyArriba) {
-    vWilla.src = "animacion/png/msaltar00" + estadoWilly.fototeca + ".png";
+    vWilla.src = "animacion/msaltar00" + estadoWilly.fototeca + ".png";
         saltar(); }
 
     estadoWilly.fototeca++;
