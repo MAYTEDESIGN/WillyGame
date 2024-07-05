@@ -28,19 +28,19 @@ let estadoObstaculo = {
 const animar = () => {
     
     if (estadoWilly.keyNoPress) {
-        vWilly.src = "animación/idle__00" + estadoWilly.fototeca + ".png";
+        vWilly.src = "/animación/idle__00" + estadoWilly.fototeca + ".png";
     } 
     if (estadoWilly.keyDerecha) {
-        vWilly.src = "animación/Run__00" + estadoWilly.fototeca + ".png";
+        vWilly.src = "/animación/Run__00" + estadoWilly.fototeca + ".png";
         
         mover(1);
     }
     if (estadoWilly.keyIzquierda) {
-        vWilly.src = "animación/Run__00" + estadoWilly.fototeca + ".png";
+        vWilly.src = "/animación/Run__00" + estadoWilly.fototeca + ".png";
         mover(-1);
     }
     if (estadoWilly.keyArriba) {
-        vWilly.src = "animación/Jump__00" + estadoWilly.fototeca + ".png";
+        vWilly.src = "/animación/Jump__00" + estadoWilly.fototeca + ".png";
         saltar();
     }
     // detectarColisión();
