@@ -68,7 +68,7 @@ body {
     align-items: center;
     width: 4vw;
     height: 15vh;
-    background-image: url("animación/LABIAL.png");
+    background-image: url("animacion/LABIAL.png");
     background-size: cover;
     position: absolute;
     top: 90vh;
@@ -103,7 +103,7 @@ body {
     left: 0;
     width: 100%;
     height: 80%;
-    background-image: url('animación/fondo_000.jpg');
+    background-image: url('animacion/fondo_000.jpg');
     background-size: cover;
     z-index: -1;
 }

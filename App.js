@@ -28,34 +28,34 @@ let estadoObstaculo = {
 const animar = () => {
     
     if (estadoWilly.keyNoPress) {
-<<<<<<< HEAD
+
         vWilly.src = "animacion/temblar00" + estadoWilly.fototeca + ".png";
     } 
     if (estadoWilly.keyDerecha) {
         vWilly.src = "animacion/correr00" + estadoWilly.fototeca + ".png";
-=======
+
         vWilly.src = "/animación/idle__00" + estadoWilly.fototeca + ".png";
     } 
     if (estadoWilly.keyDerecha) {
         vWilly.src = "/animación/Run__00" + estadoWilly.fototeca + ".png";
->>>>>>> d8f01ed4e75f99ff6954f6e3a39c3f6749a439b8
+
         
         mover(1);
     }
     if (estadoWilly.keyIzquierda) {
-<<<<<<< HEAD
+
         vWilly.src = "animacion/correr00" + estadoWilly.fototeca + ".png";
         mover(-1);
     }
     if (estadoWilly.keyArriba) {
         vWilly.src = "animacion/saltar00" + estadoWilly.fototeca + ".png";
-=======
+
         vWilly.src = "/animación/Run__00" + estadoWilly.fototeca + ".png";
         mover(-1);
     }
     if (estadoWilly.keyArriba) {
         vWilly.src = "/animación/Jump__00" + estadoWilly.fototeca + ".png";
->>>>>>> d8f01ed4e75f99ff6954f6e3a39c3f6749a439b8
+
         saltar();
     }
     // detectarColisión();
@@ -76,19 +76,19 @@ const animarM = () => {
         vWilly.src = "animacion/muere00" + estadoWilly.fototeca + ".png";
 
             if (estadoWilly.keyNoPress) {
-    vWilla.src = "animacion/png/temblar00" +estadoWilly.fototeca+".png";
+    vWilla.src = "animacion/png/mtemblar00" +estadoWilly.fototeca+".png";
         }
 
         if (estadoWilly.keyDerecha) {
-        vWilla.src = "animacion/png/correr00" + estadoWilly.mujer + ".png";
+        vWilla.src = "animacion/png/mcorrer00" + estadoWilly.mujer + ".png";
         mover(1); }
 
     if (estadoWilly.keyIzquierda) {
-    vWilla.src = "animacion/png/correr00" + estadoWilly.mujer + ".png";
+    vWilla.src = "animacion/png/mcorrer00" + estadoWilly.mujer + ".png";
         mover(-1);    }
 
 if (estadoWilly.keyArriba) {
-    vWilla.src = "animacion/png/saltar00" + estadoWilly.fototeca + ".png";
+    vWilla.src = "animacion/png/msaltar00" + estadoWilly.fototeca + ".png";
         saltar(); }
 
     estadoWilly.fototeca++;
@@ -100,7 +100,6 @@ if (estadoWilly.keyArriba) {
     if (estadoWilly.mujer === 7) {
     estadoWilly.mujer=0;
     }
-   
 }
 };
     
