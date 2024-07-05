@@ -24,23 +24,23 @@ let estadoObstaculo = {
     animacion: 'running',
 };
 
-// Función de animación
+// Función de animacion
 const animar = () => {
     
     if (estadoWilly.keyNoPress) {
-        vWilly.src = "animación/idle__00" + estadoWilly.fototeca + ".png";
+        vWilly.src = "animacion/temblar00" + estadoWilly.fototeca + ".png";
     } 
     if (estadoWilly.keyDerecha) {
-        vWilly.src = "animación/Run__00" + estadoWilly.fototeca + ".png";
+        vWilly.src = "animacion/correr00" + estadoWilly.fototeca + ".png";
         
         mover(1);
     }
     if (estadoWilly.keyIzquierda) {
-        vWilly.src = "animación/Run__00" + estadoWilly.fototeca + ".png";
+        vWilly.src = "animacion/correr00" + estadoWilly.fototeca + ".png";
         mover(-1);
     }
     if (estadoWilly.keyArriba) {
-        vWilly.src = "animación/Jump__00" + estadoWilly.fototeca + ".png";
+        vWilly.src = "animacion/saltar00" + estadoWilly.fototeca + ".png";
         saltar();
     }
     // detectarColisión();
@@ -58,20 +58,22 @@ const animarM = () => {
 
     if (estadoWilly.enColision) {
 
+        vWilly.src = "animacion/muere00" + estadoWilly.fototeca + ".png";
+
             if (estadoWilly.keyNoPress) {
-    vWilla.src = "animación/png/Idle__00" +estadoWilly.fototeca+".png";
+    vWilla.src = "animacion/png/temblar00" +estadoWilly.fototeca+".png";
         }
 
         if (estadoWilly.keyDerecha) {
-        vWilla.src = "animación/png/MRun__00" + estadoWilly.mujer + ".png";
+        vWilla.src = "animacion/png/correr00" + estadoWilly.mujer + ".png";
         mover(1); }
 
     if (estadoWilly.keyIzquierda) {
-    vWilla.src = "animación/png/MRun__00" + estadoWilly.mujer + ".png";
+    vWilla.src = "animacion/png/correr00" + estadoWilly.mujer + ".png";
         mover(-1);    }
 
 if (estadoWilly.keyArriba) {
-    vWilla.src = "animación/png/MJump__00" + estadoWilly.fototeca + ".png";
+    vWilla.src = "animacion/png/saltar00" + estadoWilly.fototeca + ".png";
         saltar(); }
 
     estadoWilly.fototeca++;
@@ -191,7 +193,7 @@ const detectarColisión = () => {
         
     //     // Opción 1: Mantener el estado de mujer durante 3 segundos
     //     setTimeout(() => {
-    //     //     // Aquí puedes detener cualquier animación o lógica del juego
+    //     //     // Aquí puedes detener cualquier animacion o lógica del juego
     //         clearInterval(animarInterval);
     //         clearInterval(detectarColisionInterval);
     //         alert("Willy es mujer");
